@@ -1,20 +1,18 @@
-<!DOCTYPE html>
-
 <html>
 
     <head>
-        <title>Todo List APP test</title>
+        <title>Grocery APP test</title>
         <style>
             a {
                 text-decoration: none;
-                color: black;
+                color: rgb(0, 0, 0);
             }
 
         </style>
     </head>
 
     <body>
-        <h1>Jenkins is Awesome.</h1>
+        <h1>Jenkins is Awesome CI tool.</h1>
         <ul>
             <% todolist.forEach(function(todo, index) { %>
             <li>
@@ -27,9 +25,9 @@
 
         <form action="/todo/add/" method="post">
             <p>
-                <label for="newtodo">What shoud I do?</label>
+                <label for="newtodo">What you wanna buy?</label>
                 <input type="text" name="newtodo" id="newtodo" autofocus />
-                <input type="submit" value="Add" />
+                <input type="submit" value="Add in list" />
             </p>
         </form>
     </body>
